@@ -3,9 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Discursive Impulse</title> <!-- How to output page name /post name? -->
+    <link rel="stylesheet" type="text/css" href="assets/css/screen.css">
     {{ghost_head}}
   </head>
   <body>
+    <header>
+      <h1 class="page-title">{{@blog.title}}</h1>
+    </header>
+    {{{body}}}
     {{ghost_foot}}
   </body>
 </html>
