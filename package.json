@@ -1,0 +1,16 @@
+{
+    "name": "discursive",
+    "description": "A theme to be used for PNCA + CCAC's project: Discursive Impulse",
+    "version": "0.1.0",
+    "engines": {
+        "ghost": ">=1.0.0"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Oskar",
+        "email": "oradonkimball@pnca.edu"
+    },
+    "config": {
+        "posts_per_page": 10
+    }
+}
