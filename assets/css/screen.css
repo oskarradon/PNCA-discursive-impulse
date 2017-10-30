@@ -148,8 +148,7 @@ header {
 .post {
   display: flex;
   flex-wrap: wrap;
-  /*flex-direction: column;*/
-  padding: 10px 0;
+  padding: 15px 0;
   border-bottom: 1px solid;
 }
 
@@ -180,14 +179,22 @@ header {
 }
 
 .post__content {
-  order:2;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  order: 2;
   width:calc(100% - 100px);
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 .post__author, .post__tag {
   font-size: 20px;
   width:100%;
+}
+
+.post__author {
+  padding-bottom: 15px;
 }
 
 @media all and (min-width: 800px) {
@@ -202,17 +209,18 @@ header {
     align-items: center;
   }
 
+  .post__content {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
   .post__author, .post__tag {
     font-size: 1.5em;
   }
 
-  .post__content {
-    display:flex;
-    flex-wrap:wrap;
-  }
-
   .post__header {
     order: 2;
+    margin-bottom: 0;
   }
 
   .post__img {
@@ -221,12 +229,12 @@ header {
 
   .post__author {
     order: 3;
-    width:50%;
+    width: 50%;
   }
 
   .post__tag {
     order: 4;
-    width:50%;
+    width: 50%;
   }
 }
 
