@@ -3,13 +3,13 @@
   {{!-- center the 'feed' --}}
   <div class="outer">
     <div class="inner">
+      <main class="post__container">
 
         {{#foreach posts}}
 
         <article class="{{post_class}} post">
 
-          <section class="post__img">
-            <img src="{{img_url feature_image}}">
+          <section class="post__img" style="background-image:url({{img_url feature_image}});" title="Image associated with the post entitled {{title}}">
           </section>
 
           <section class="post__header">
@@ -27,6 +27,8 @@
         </article>
 
         {{/foreach}}
+
+      </main>
 
     </div>
   </div>
