@@ -10,7 +10,17 @@
         "name": "Oskar",
         "email": "oradonkimball@pnca.edu"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/oskarradon/discursive-impulse.git"
+    },
     "config": {
         "posts_per_page": 10
+    },
+    "devDependencies": {},
+    "dependencies": {
+        "ghost": "^1.16.0",
+        "gulp": "^3.9.1",
+        "require-dir": "^0.3.2"
     }
 }
