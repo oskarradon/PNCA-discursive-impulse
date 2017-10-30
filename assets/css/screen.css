@@ -21,7 +21,7 @@ production stylesheet in assets/built/screen.css
 @import "global.css";
 
 body {
-    background: #ff00ff;
+    background: #fff;
 }
 
 .img {
@@ -93,18 +93,54 @@ body {
 /* 5. Post Feed
 /* ---------------------------------------------------------- */
 
+
 .post {
-  display: grid;
-  grid-template-columns: 1fr 3fr 2fr 2fr;
-  grid-row-gap: 20px;
-  grid-column-gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.post__header {
+  order: 1;
 }
 
 .post__img {
   width: 100px;
   height: 100px;
+  order: 2;
 }
 
+.post__author {
+  order: 3;
+}
+
+.post__tag {
+  order: 4;
+}
+
+@media all and (min-width: 800px) {
+  .post {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr 2fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+  }
+
+  .post__header {
+    order: 2;
+  }
+
+  .post__img {
+    order: 1;
+  }
+
+  .post__author {
+    order: 3;
+  }
+
+  .post__tag {
+    order: 4;
+  }
+}
 
 /* 6. Single Post
 /* ---------------------------------------------------------- */
