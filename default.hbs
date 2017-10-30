@@ -17,19 +17,21 @@
 <body class={{body_class}}>
 
   <div class="site-wrapper">
+    <div class="site-main">
 
-    <header>
-      <h1 class="page__title">{{@blog.title}}</h1>
-    </header>
+      <header>
+        <h1 class="page__title">{{@blog.title}}</h1>
+      </header>
 
-    {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
-    {{{body}}}
+      {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
+      {{{body}}}
 
-    {{!-- The footer at the very bottom of the screen --}}
-    <footer>
-      {{!-- image links to PNCA, crit studies, CCAC   --}}
-    </footer>
+      {{!-- The footer at the very bottom of the screen --}}
+      <footer>
+        {{!-- image links to PNCA, crit studies, CCAC   --}}
+      </footer>
 
+    </div>
   </div>
 
   {{ghost_foot}}
