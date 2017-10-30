@@ -6,26 +6,18 @@ production stylesheet in assets/built/screen.css
 
 1.  Global Styles
 2.  Layout
-3.  Special Templates
-4.  Site Header
-5.  Site Navigation
-6.  Post Feed
-7.  Single Post
-  7.1. Subscribe Form
-  7.2. Post Footer
-  7.3. Comments
-  7.4. Related Posts
-  7.5. Floating Header
-8.  Author Template
-9.  Error Template
-10. Subscribe Overlay
-11. Site Footer
-
-*/
+3.  Site Header
+4.  Site Navigation
+5.  Post Feed
+6.  Single Post
+7.  Author Template
+8.  Error Template
+9. Site Footer
 
 
-/* 1. Global - Set up the things
+/* 1. Global - Set it up!!!
 /* ---------------------------------------------------------- */
+
 @import "global.css";
 
 body {
@@ -46,3 +38,86 @@ body {
     position: absolute;
     text-indent: -9999px;
 }
+
+
+/* 2. Layout - Page building blocks
+/* ---------------------------------------------------------- */
+
+.site-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.site-main {
+    z-index: 100;
+    flex-grow: 1;
+}
+
+/* Full width page blocks */
+.outer {
+    position: relative;
+    padding: 0 4vw;
+}
+
+/* Centered content container blocks */
+.inner {
+    width: 100%;
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+/* Usage:
+
+<div class="outer">
+    <div class="inner">
+        Centered content
+    </div>
+</div>
+
+*/
+
+
+/* 3. Site Header
+/* ---------------------------------------------------------- */
+
+
+
+
+/* 4. Site Navigation
+/* ---------------------------------------------------------- */
+
+
+
+
+/* 5. Post Feed
+/* ---------------------------------------------------------- */
+.post {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr 2fr;
+}
+
+.post__img {
+  width: 100px;
+  height: 100px;
+}
+
+
+/* 6. Single Post
+/* ---------------------------------------------------------- */
+
+
+
+
+/* 7. Author Template
+/* ---------------------------------------------------------- */
+
+
+
+/* 8. Error Template
+/* ---------------------------------------------------------- */
+
+
+
+/* 9. Site Footer
+/* ---------------------------------------------------------- */
