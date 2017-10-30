@@ -12,5 +12,8 @@
     },
     "config": {
         "posts_per_page": 10
+    },
+    "devDependencies": {
+        "gulp": "^3.9.1"
     }
 }
