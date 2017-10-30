@@ -162,40 +162,32 @@ header {
 }
 
 .post__header {
-  order: 1;
   font-weight: bold;
   font-size: 2em;
   display: flex;
   align-items: center;
   width:100%;
+  margin-bottom: 6px;
 }
 
 .post__img {
   display:block;
   width: 100px;
   height: 100px;
-  order: 2;
   background-position:center center;
-  background-size:200%;
+  background-size: 200%;
   background-repeat:no-repeat;
 }
 
 .post__content {
   order:2;
   width:calc(100% - 100px);
+  padding-left: 10px;
 }
 
 .post__author, .post__tag {
   font-size: 20px;
   width:100%;
-}
-
-.post__author {
-  order: 3;
-}
-
-.post__tag {
-  order: 4;
 }
 
 @media all and (min-width: 800px) {
