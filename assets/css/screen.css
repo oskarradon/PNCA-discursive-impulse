@@ -39,6 +39,42 @@ body {
     text-indent: -9999px;
 }
 
+@font-face {
+    font-family: DIN;
+    src: url(../fonts/DINNextLTPro-Medium.otf);
+}
+
+@font-face {
+    font-family: DIN;
+    src: url(../fonts/DINNextLTPro-Bold.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: freight-text;
+    src: url(../fonts/FreightTextPro-Medium.otf);
+}
+
+@font-face {
+    font-family: freight-text;
+    src: url(../fonts/FreightTextPro-MediumItalic.otf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: freight-text;
+    src: url(../fonts/FreightTextPro-Bold.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: freight-text;
+    src: url(../fonts/FreightTextPro-BoldItalic.otf);
+    font-weight: bold;
+    font-style: italic;
+}
+
+
 
 /* 2. Layout - Page building blocks
 /* ---------------------------------------------------------- */
