@@ -148,6 +148,7 @@ header button {
 
 nav {
   text-align: center;
+  display: none;
 }
 
 nav a {
