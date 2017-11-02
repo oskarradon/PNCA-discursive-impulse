@@ -18,6 +18,7 @@ A theme for [PNCA](http://pnca.edu/)'s [Ghost.io](http://ghost.io) site, [Discur
  - [ ] Author page
  - [ ] Footer with images
  - [ ] Actual logo in header
+ - [ ] 404 Page
 
 Made by Oskar Radon & Chris Kim
 
