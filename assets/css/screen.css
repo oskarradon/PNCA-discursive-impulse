@@ -157,6 +157,10 @@ nav a {
   margin-bottom: 12px;
 }
 
+nav a:last-of-type {
+  margin-bottom: 18px;
+}
+
 @media all and (min-width: 800px) {
   nav {
     text-align: left;
@@ -166,10 +170,6 @@ nav a {
 
 /* 5. Post Feed
 /* ---------------------------------------------------------- */
-
-.post__container {
-  margin-top: 20px;
-}
 
 .post {
   display: flex;
