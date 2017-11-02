@@ -140,7 +140,9 @@ header button {
 }
 
 @media all and (min-width: 800px) {
-
+  .header__menu-icon {
+    display: none;
+  }
 }
 
 /* 4. Site Navigation
