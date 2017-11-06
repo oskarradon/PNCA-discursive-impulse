@@ -134,7 +134,8 @@ a {
 .header__menu-icon {
   position: absolute;
   top: calc(4vw + 8px);
-  right: calc(4vw + 16px);
+  right: calc(4vw + 10px);
+  padding: 0px;
 }
 
 header button {
@@ -314,12 +315,12 @@ header button {
 /* ---------------------------------------------------------- */
 
 .page {
-  padding: 40px 20px 0px 10px;
+  padding: 40px 10px 0px;
 }
 
 .page p {
-  white-space: pre-wrap;
-  word-wrap: break-word;
+  /*white-space: pre-wrap;*/
+  overflow-wrap: break-word;
 }
 
 
