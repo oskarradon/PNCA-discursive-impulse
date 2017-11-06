@@ -12,6 +12,7 @@ A theme for [PNCA](http://pnca.edu/)'s [Ghost.io](http://ghost.io) site, [Discur
    - [x] Animation?
  - [x] Hamburger menu on mobile
    - [ ] Animation?
+ - [ ] Load more posts button on front page
  - [ ] Post page
    - [ ] Cool link outline thing
    - [ ] Blockquotes
