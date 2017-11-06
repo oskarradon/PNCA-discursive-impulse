@@ -405,7 +405,7 @@ hr {
   border-bottom: 1px dashed #5DABFF;
   display: inline-block;
   position: relative;
-  padding: 0 .2em;
+  padding: .2em .2em 0px .2em;
   -webkit-transition: all 250ms;
   transition: all 250ms;
   z-index: 1000;
