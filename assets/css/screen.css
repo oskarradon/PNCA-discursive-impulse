@@ -351,7 +351,6 @@ footer {
   display: flex;
   justify-content: center;
   padding-bottom: 30px;
-  max-width: 230px;
   padding-left: calc(4vw + 10px);
 }
 
@@ -367,39 +366,31 @@ footer {
   padding-left: calc(4vw + 10px);
 }
 
-.footer-desc {
+.footer__desc {
   margin-top: 30px;
   padding-left: calc(4vw + 10px);
 }
 
-.footer-desc p {
+.footer__desc p {
   line-height: 1.4em;
   margin-bottom: 15px;
 }
 
 @media all and (min-width: 500px) {
-  /*footer {
-    padding-top: 100px;
-  }
 
   .footer__logos {
-    width: 100%;
+    max-width: 230px;
   }
-
-  .footer__logos a img {
-    height: 30px;
-    width: auto;
-    max-width: none;
-  }
-
-  .logo-ccac {
-    margin: 0px;
-    width: 100%;
-    margin-right: 20px;
-  }*/
 
 }
 
+@media all and (min-width: 850px) {
+/*i dont know why this fix is needed*/
+  .logo-pnca, .footer__desc {
+    padding-left: 4vw;
+  }
+
+}
 @media all and (min-width: 1440px) {
 
 footer {
@@ -420,7 +411,7 @@ footer {
   height: auto;
 }
 
-.logo-ccac, .logo-cs, .logo-pnca, .footer-desc {
+.logo-ccac, .logo-cs, .logo-pnca, .footer__desc {
   margin-left: 0px;
   padding-left: 0px;
 }
@@ -429,6 +420,10 @@ footer {
 
 @media all and (min-width: 1800px) {
   footer {
+    width: 150px;
+  }
+
+  .footer__logos {
     width: 150px;
   }
 }
