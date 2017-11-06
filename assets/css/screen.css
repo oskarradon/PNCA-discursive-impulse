@@ -231,6 +231,7 @@ header button {
 
 .post__header, .post__author, .post__tag {
   display: inline-block;
+  overflow-wrap: break-word;
 }
 
 .post__header {
