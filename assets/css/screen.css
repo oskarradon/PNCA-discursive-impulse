@@ -351,6 +351,8 @@ footer {
   display: flex;
   justify-content: center;
   padding-bottom: 30px;
+  max-width: 230px;
+  padding-left: calc(4vw + 10px);
 }
 
 .logo-ccac {
@@ -376,7 +378,7 @@ footer {
 }
 
 @media all and (min-width: 500px) {
-  footer {
+  /*footer {
     padding-top: 100px;
   }
 
@@ -394,7 +396,7 @@ footer {
     margin: 0px;
     width: 100%;
     margin-right: 20px;
-  }
+  }*/
 
 }
 
@@ -411,6 +413,7 @@ footer {
 
 .footer__logos {
   width: 100px;
+  padding-left: 0px;
 }
 
 .footer__logos a img {
