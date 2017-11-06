@@ -311,7 +311,15 @@ header button {
 /* 6. Single Post
 /* ---------------------------------------------------------- */
 
+.page {
+  margin-top: 40px;
+}
 
+.page p {
+  padding-right: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
 
 
 /* 7. Author Template
