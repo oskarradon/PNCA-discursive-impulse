@@ -125,14 +125,16 @@ a {
 /* ---------------------------------------------------------- */
 
 .header__logo {
-  margin: 4vw 0 20px 4vw;
-  width: 220px;
+  margin-top: calc(4vw + 10px);
+  margin-bottom: 20px;
+  margin-left: calc(4vw + 10px);
+  width: 200px;
 }
 
 .header__menu-icon {
   position: absolute;
-  top: 4vw;
-  right: 4vw;
+  top: calc(4vw + 8px);
+  right: calc(4vw + 16px);
 }
 
 header button {
@@ -312,11 +314,10 @@ header button {
 /* ---------------------------------------------------------- */
 
 .page {
-  margin-top: 40px;
+  padding: 40px 20px 0px 10px;
 }
 
 .page p {
-  padding-right: 10px;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
