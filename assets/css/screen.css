@@ -347,7 +347,7 @@ footer {
   padding: 40px 0px;
 }
 
-.footer-logos {
+.footer__logos {
   display: flex;
   justify-content: center;
   padding-bottom: 30px;
@@ -379,6 +379,23 @@ footer {
   footer {
     padding-top: 100px;
   }
+
+  .footer__logos {
+    width: 100%;
+  }
+
+  .footer__logos a img {
+    height: 30px;
+    width: auto;
+    max-width: none;
+  }
+
+  .logo-ccac {
+    margin: 0px;
+    width: 100%;
+    margin-right: 20px;
+  }
+
 }
 
 @media all and (min-width: 1440px) {
@@ -390,6 +407,14 @@ footer {
   right: 48.12px;
   bottom: 48.12px;
   padding: 0px;
+}
+
+.footer__logos {
+  width: 100px;
+}
+
+.footer__logos a img {
+  height: auto;
 }
 
 .logo-ccac, .logo-cs, .logo-pnca, .footer-desc {
