@@ -17,8 +17,8 @@ A theme for [PNCA](http://pnca.edu/)'s [Ghost.io](http://ghost.io) site, [Discur
    - [ ] Cool link outline thing
    - [ ] Blockquotes
  - [ ] Author page
- - [ ] Footer with images
- - [ ] Actual logo in header
+ - [x] Footer with images
+ - [x] Actual logo in header
  - [ ] 404 Page
  - [ ] Star icon in nav
 
