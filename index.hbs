@@ -1,36 +1,85 @@
-{{!< default}}
+<!DOCTYPE html>
+<html>
+<head>
 
-  {{!-- center the 'feed' --}}
-  <div class="outer">
-    <div class="inner">
-      <main class="post__container">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        {{#foreach posts}}
+  <title>{{meta_title}}</title>
+  <meta name="HandheldFriendly" content="True">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <article class="{{post_class}} post">
+  <link rel="stylesheet" type="text/css" href="/assets/css/screen.css">
 
-          <section class="post__header">
-            <h2><a href="{{url}}">{{title}}</a></h2>
-          </section>
+  {{ghost_head}}
 
-          <section class="post__img" style="background-image:url({{img_url feature_image}});" title="Image associated with the post entitled {{title}}">
-          </section>
+</head>
+<body class={{body_class}}>
 
-          <div class="post__content">
-            <section class="post__author">
-              <h4>{{author}}</h4>
-            </section>
+  <div class="site-wrapper">
+    <div class="site-main">
 
-            <section class="post__tag">
-              <h4>{{primary_tag.name}}</h4>
-            </section>
-          </div>
+      <header>
 
-        </article>
+        <img src="assets/images/discursive-logo.jpg" class="header__logo" alt="Logo of Discursive Impulse">
 
-        {{/foreach}}
+        <button class="header__menu-icon">
+          <img src="assets/images/menu-icon.png" alt="Menu icon">
+        </button>
 
-      </main>
+        <section class="nav__wrapper">
+          {{navigation}}
+        </section>
+
+      </header>
+
+
+      {{!-- center the 'feed' --}}
+      <div class="outer">
+        <div class="inner">
+          <main class="post__container">
+
+            {{#foreach posts}}
+
+            <article class="{{post_class}} post">
+
+              <section class="post__header">
+                <h2><a href="{{url}}">{{title}}</a></h2>
+              </section>
+
+              <section class="post__img" style="background-image:url({{img_url feature_image}});" title="Image associated with the post entitled {{title}}">
+              </section>
+
+              <div class="post__content">
+                <section class="post__author">
+                  <h4>{{author}}</h4>
+                </section>
+
+                <section class="post__tag">
+                  <h4>{{primary_tag.name}}</h4>
+                </section>
+              </div>
+
+            </article>
+
+            {{/foreach}}
+
+          </main>
+
+        </div>
+      </div>
+
+
+      <footer>{{!-- The footer at the very bottom of the screen --}}
+        {{!-- image links to PNCA, crit studies, CCAC   --}}
+      </footer>
 
     </div>
+
   </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="assets/js/scripts.js" charset="utf-8"></script>
+  {{ghost_foot}}
+
+</body>
+</html>
