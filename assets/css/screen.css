@@ -344,22 +344,27 @@ header button {
 
 .page h1 {
   font-size: 36px;
+  line-height: 1.15em;
 }
 
 .page h2 {
   font-size: 28px;
+  line-height: 1.2em;
 }
 
 .page h3 {
   font-size: 25px;
+  line-height: 1.2em;
 }
 
 .page h4 {
   font-size: 20px;
+  line-height: 1.2em;
 }
 
 .page h5 {
   font-size: 18px;
+  line-height: 1.2em;
 }
 
 .page ul, .page ol {
