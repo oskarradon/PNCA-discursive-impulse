@@ -338,3 +338,35 @@ header button {
 
 /* 9. Site Footer
 /* ---------------------------------------------------------- */
+
+footer {
+  padding: 40px 0px;
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.logo-ccac {
+  margin: 0px 20px 0px -20px;
+}
+
+.logo-cs {
+  margin-left: 20px;
+}
+
+.logo-pnca {
+  padding-left: calc(4vw + 10px);
+}
+
+.footer-desc {
+  margin-top: 30px;
+  padding-left: calc(4vw + 10px);
+}
+
+.footer-desc p {
+  line-height: 1.4em;
+  margin-bottom: 15px;
+}
