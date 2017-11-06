@@ -221,6 +221,7 @@ header button {
   display: flex;
   flex-wrap: wrap;
   padding: 15px 0;
+  margin: 0 10px;
   border-bottom: 1px solid;
 }
 
@@ -274,6 +275,7 @@ header button {
     display: grid;
     grid-template-columns: 1fr 3fr 4fr;
     grid-column-gap: 20px;
+    margin: 0px;
   }
 
   .post__header, .post__author, .post__tag {
