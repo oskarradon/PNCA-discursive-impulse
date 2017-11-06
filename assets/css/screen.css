@@ -242,6 +242,11 @@ header button {
   margin-bottom: 8px;
 }
 
+.post__header a {
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
 .post__img {
   display:block;
   width: 100px;
@@ -321,7 +326,6 @@ header button {
 }
 
 .page p {
-  /*white-space: pre-wrap;*/
   overflow-wrap: break-word;
 }
 
@@ -369,4 +373,34 @@ footer {
 .footer-desc p {
   line-height: 1.4em;
   margin-bottom: 15px;
+}
+
+@media all and (min-width: 500px) {
+  footer {
+    padding-top: 100px;
+  }
+}
+
+@media all and (min-width: 1440px) {
+
+footer {
+  position: fixed;
+  width: 100px;
+  height: 286px;
+  right: 48.12px;
+  bottom: 48.12px;
+  padding: 0px;
+}
+
+.logo-ccac, .logo-cs, .logo-pnca, .footer-desc {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+}
+
+@media all and (min-width: 1800px) {
+  footer {
+    width: 150px;
+  }
 }
