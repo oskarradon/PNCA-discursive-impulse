@@ -2,6 +2,8 @@ $(function(){
 
   // This function allows the hamburger menu to toggle the nav on mobile view widths
 
+  // Currrently does not check on window resize event, change this!!
+
   if (window.innerWidth <= 800) {
     $('.header__menu-icon').click(() => {
       $('.nav').slideToggle('slow');
@@ -14,10 +16,7 @@ $(function(){
       var b = $('body');
       var normalw = 0;
       var scrollw = 0;
-      console.log('here');
       if (!($("body").height() > $(window).height())) {
-        console.log('inside if');
-        console.log('hello');
         $('footer').css({right:'62.12px'});
       }
   }
@@ -64,6 +63,7 @@ $(function(){
     })
 
     function insertPost(postData, authorData) {
+      console.log('here');
         //start the inserting of the html
         var postInfo = '<article class="post">\
                 <header class="post-header">\
