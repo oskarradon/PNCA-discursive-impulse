@@ -58,7 +58,7 @@ production stylesheet in assets/built/screen.css
 }
 
 
-/*::-webkit-scrollbar { 
+/*::-webkit-scrollbar {
   display: none;
 }*/
 
@@ -223,6 +223,10 @@ header button {
 /* 5. Post Feed
 /* ---------------------------------------------------------- */
 
+.feed {
+  padding: 40px 0px 100px;
+}
+
 .post {
   display: flex;
   flex-wrap: wrap;
@@ -330,8 +334,12 @@ header button {
 /* ---------------------------------------------------------- */
 
 .page {
-  padding: 40px 10px 0px;
+  padding: 40px 10px 100px;
   font-family: 'freight-text', serif;
+}
+
+.featured-img {
+  margin-bottom: 60px;
 }
 
 .page * {
@@ -450,7 +458,6 @@ hr {
   background: #B9DBFF;
   padding: 4px;
 }
-
 
 
 /* 7. Author Template
