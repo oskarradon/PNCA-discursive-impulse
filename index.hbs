@@ -42,7 +42,7 @@
         <div class="inner">
           <main class="feed">
 
-            {{#foreach posts limit="4"}}
+            {{#foreach posts limit="8"}}
 
               <article class="{{post_class}} post">
 
@@ -51,10 +51,10 @@
                 </section>
 
                 {{#if feature_image}}
-                <a href="{{url}}"><section class="post__img" style="background-image:url({{img_url feature_image}});" title="Image associated with the post entitled '{{title}}'">
-                </section></a>
+                  <a href="{{url}}"><div class="post__img" style="background-image:url({{img_url feature_image}});" title="Image associated with the post entitled '{{title}}'">
+                  </div></a>
                 {{else}}
-                <a href="{{url}}"><img src="/assets/images/placeholder-img.png" alt="There is no featured image for this post"></a>
+                  <a href="{{url}}"><img src="/assets/images/placeholder-img.png" alt="There is no featured image for this post"></a>
                 {{/if}}
 
                 <div class="post__content">

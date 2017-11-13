@@ -49,6 +49,10 @@ $(function(){
                     $.each(data.users, function(i, users) {
                         //Now that we have the author and post data, send that to the insertPost function
                         insertPost(post, users);
+
+                        //testing 
+                        console.log ('post:' + post);
+                        console.log('users:' + users);
                     });
                 });
             });
@@ -65,23 +69,23 @@ $(function(){
     function insertPost(postData, authorData) {
       console.log('here');
         //start the inserting of the html
-        var postInfo = '<article class="post">\
-                <header class="post-header">\
-                    <h2 class="post-title"><a href="' + postData.url + '">' + postData.title + '</a></h2>\
-                </header>\
-                <section class="post-excerpt">\
-                    <p>' + postData.html + '<a class="read-more" href="' + postData.url + '">& raquo; < /a></p > \
-            < /section>\ < footer class = "post-meta" > '
-
+        var postInfo =
+          '<article class="post">\
+              <section class="post__header">\
+                <a href="' + postData.url + '"> \
+                  <h2 class="post-title">' + postData.title + '</h2> \
+                </a> \
+              </section>'
         //if no author image, dont include it
-        if (authorData.Image != null) {
-            postInfo += '<img class="author-thumb" src="' + authorData.image + '" alt="' + authorData.name + '" nopin="nopin" />'
+        if (postData.feature_image != null) {
+            postInfo += 'a href="' + postData.url + '"\
+              <div class="post__img" style="background-image:url(' + postData.feature_image + ');" title="Image associated with the post entitled' + postData.title + ''
         }
 
         //if there are tags, add each of them to the post
         if (postData.tags.length > 0) {
             for (i = 0; i < postData.tags.length; i++) {
-                console.log(postData.tags[i]);
+                // console.log(postData.tags[i]);
                 postInfo += authorData.name + ' on ' + '<a href="/tag/' + postData.tags[i].slug + '">' + postData.tags[i].name + "</a> ";
             }
         } else {
