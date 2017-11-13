@@ -57,6 +57,12 @@ production stylesheet in assets/built/screen.css
   font-style: italic;
 }
 
+
+/*::-webkit-scrollbar { 
+  display: none;
+}*/
+
+
 body {
     background: #fff;
     font-family: 'DIN' , 'Helvetica Neue', sans-serif; /* Set all text as DIN, this will override in styling for post page */
