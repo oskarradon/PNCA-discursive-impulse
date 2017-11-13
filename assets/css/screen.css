@@ -330,6 +330,21 @@ header button {
   }
 }
 
+.button-wrapper {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.button__load-more {
+  background: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.button__load-more .down-triangle {
+  font-size: 14px;
+}
+
 /* 6. Single Post
 /* ---------------------------------------------------------- */
 
