@@ -28,9 +28,9 @@ $(function(){
 
 
   //This is set to 2 since the posts already loaded should be page 1
-    nextPage = 2;
+    nextPage = 1;
     //Set this to match the pagination used in your blog
-    pagination = 1;
+    pagination = 2;
 
     //on button click
     $('#load-posts').click(function() {
@@ -78,12 +78,19 @@ $(function(){
               </section>';
         //if no author image, dont include it
         if (postData.feature_image != null) {
-            postInfo += 'a href="' + postData.url + '"\
-              <div class="post__img" style="background-image:url(' + postData.feature_image + ');" title="Image associated with the post entitled' + postData.title + ''
+            postInfo +=
+              '<a href="' + postData.url + '"> \
+                <div class="post__img" \
+                style="background-image:url(' + postData.feature_image + ');" \
+                title="Image associated with the post entitled' + postData.title + '"></div> \
+              </a>'
         } else {
-          postInfo += '<a href="' + postData.url + '"\
+          postInfo +=
+            '<a href="' + postData.url + '">\
             <img src="/assets/images/placeholder-img.png" alt="There is no featured image for this post"></a>'
         }
+
+        postInfo += '</article>'
 
 
         //Append the html to the content of the blog
