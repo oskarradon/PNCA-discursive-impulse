@@ -42,7 +42,7 @@
         <div class="inner">
           <main class="feed">
 
-            {{#foreach posts limit="4"}}
+            {{#foreach posts limit="20"}}
 
               <article class="{{post_class}} post">
 
@@ -73,7 +73,7 @@
 
           </main>
 
-          <section class="button-wrapper">
+          <section style="display: none;" class="button-wrapper">
             <button id="load-posts" class="button__load-more">Load More <span class="down-triangle">&#x25BC;</span></button>
           </section>
 

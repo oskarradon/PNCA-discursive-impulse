@@ -21,6 +21,7 @@ A theme for [PNCA](http://pnca.edu/)'s [Ghost.io](http://ghost.io) site, [Discur
  - [x] Actual logo in header
  - [ ] 404 Page
  - [ ] Star icon in nav
+ - [ ] Bio page
 
 Made by Oskar Radon & Chris Kim
 

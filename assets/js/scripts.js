@@ -30,15 +30,13 @@ $(function(){
   //This is set to 2 since the posts already loaded should be page 1
     nextPage = 1;
     //Set this to match the pagination used in your blog
-    pagination = 2;
+    pagination = 1;
 
     //on button click
     $('#load-posts').click(function() {
-        $.ajax({
-            //go grab the pagination number of posts on the next page and include the tags
-            url: ghost.url.api("posts") + '&include=tags&limit=' + pagination + '&page=' + nextPage,
-            type: 'get'
-        }).done(function(data) {
+
+
+        $.get(ghost.url.api('posts', {limit: 2, page: pagination})).done(function(data) {
             //for each post returned
             $.each(data.posts, function(i, post) {
                 //Take the author of the post, and now go get that data to fill in
@@ -96,7 +94,7 @@ $(function(){
         //Append the html to the content of the blog
         $('.feed').append(postInfo);
         //incriment next page so it will get the next page of posts if hit again.
-        nextPage += 1;
+        pagination += 1;
     }
 
 });
