@@ -50,9 +50,9 @@ $(function(){
                         //Now that we have the author and post data, send that to the insertPost function
                         insertPost(post, users);
 
-                        //testing 
-                        console.log ('post:' + post);
-                        console.log('users:' + users);
+                        //testing
+                        console.log (post);
+                        console.log(users);
                     });
                 });
             });
@@ -75,29 +75,16 @@ $(function(){
                 <a href="' + postData.url + '"> \
                   <h2 class="post-title">' + postData.title + '</h2> \
                 </a> \
-              </section>'
+              </section>';
         //if no author image, dont include it
         if (postData.feature_image != null) {
             postInfo += 'a href="' + postData.url + '"\
               <div class="post__img" style="background-image:url(' + postData.feature_image + ');" title="Image associated with the post entitled' + postData.title + ''
-        }
-
-        //if there are tags, add each of them to the post
-        if (postData.tags.length > 0) {
-            for (i = 0; i < postData.tags.length; i++) {
-                // console.log(postData.tags[i]);
-                postInfo += authorData.name + ' on ' + '<a href="/tag/' + postData.tags[i].slug + '">' + postData.tags[i].name + "</a> ";
-            }
         } else {
-            //if no tags, just add the author name
-            postInfo += authorData.name;
+          postInfo += '<a href="' + postData.url + '"\
+            <img src="/assets/images/placeholder-img.png" alt="There is no featured image for this post"></a>'
         }
 
-        //Finish off the html with the time
-        //The format for the time will be different, you will have to figure this out
-        postInfo += '<time class="post-date" datetime="' + postData.published_at + '">' + postData.published_at + '</time>\
-                </footer>\
-            </article>'
 
         //Append the html to the content of the blog
         $('.feed').append(postInfo);
