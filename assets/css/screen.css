@@ -224,7 +224,11 @@ header button {
 /* ---------------------------------------------------------- */
 
 .feed {
-  padding: 40px 0px 100px;
+  padding: 40px 0px 0px;
+}
+
+.feed__outer {
+  padding-bottom: 100px;
 }
 
 .post {

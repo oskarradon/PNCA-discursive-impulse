@@ -96,7 +96,7 @@ $(function(){
             </article>'
 
         //Append the html to the content of the blog
-        $('.content').append(postInfo);
+        $('.feed').append(postInfo);
         //incriment next page so it will get the next page of posts if hit again.
         nextPage += 1;
     }
