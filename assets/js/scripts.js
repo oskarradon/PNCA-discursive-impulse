@@ -28,15 +28,21 @@ $(function(){
 
 
   //This is set to 2 since the posts already loaded should be page 1
-    nextPage = 1;
+    nextPage = 5;
     //Set this to match the pagination used in your blog
-    pagination = 1;
+    pagination = 2;
 
     //on button click
     $('#load-posts').click(function() {
 
+        $.get(ghost.url.api('posts', {page: pagination, limit: nextPage})).done(function(data) {
+          let totalPosts = data.meta.pagination.total;
+            totalPosts = totalPosts - nextPage*2;
+            console.log(totalPosts);
 
-        $.get(ghost.url.api('posts', {limit: 2, page: pagination})).done(function(data) {
+            if (totalPosts < nextPage && totalPosts > 0) {
+              nextPage = totalPosts;
+            }
             //for each post returned
             $.each(data.posts, function(i, post) {
                 //Take the author of the post, and now go get that data to fill in
@@ -93,7 +99,7 @@ $(function(){
 
         //Append the html to the content of the blog
         $('.feed').append(postInfo);
-        //incriment next page so it will get the next page of posts if hit again.
+        //incriment next page so it will get the next page of posts if hit again.ß
         pagination += 1;
     }
 
