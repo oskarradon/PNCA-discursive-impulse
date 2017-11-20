@@ -334,19 +334,31 @@ header button {
   }
 }
 
-.button-wrapper {
+.pagination-wrapper {
   text-align: center;
   padding: 20px 0px;
+  /*display: flex;*/
+  /*justify-content: space-between;*/
 }
 
-.button__load-more {
-  background: none;
+.pagination a {
   font-weight: bold;
+}
+
+.older-posts, .newer-posts {
   font-size: 18px;
 }
 
-.button__load-more .down-triangle {
-  font-size: 14px;
+.older-posts {
+  float: right;
+}
+
+.newer-posts {
+  float: left;
+}
+
+.arrow__left, .arrow__right {
+ font-size: 14px;
 }
 
 /* 6. Single Post
