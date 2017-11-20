@@ -438,6 +438,10 @@ header button {
   font-style: italic;
 }
 
+pre {
+  margin-bottom: 20px;
+}
+
 code {
   font-family: 'Roboto Mono';
   background: #EDEDED;
@@ -450,7 +454,7 @@ hr {
   border: 0;
   height: 1px;
   background: black;
-  margin-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 /* https://codepen.io/danferth/ came up with this */
@@ -464,7 +468,7 @@ hr {
   -webkit-transition: all 250ms;
   transition: all 250ms;
   z-index: 1000;
-}          
+}
 
 .page a:hover {
   border-color: transparent;
