@@ -5,10 +5,12 @@
   <div class="inner">
     <main class="page">
 
+
       {{#if feature_image}}
         <img class="featured-img" src="{{img_url feature_image}}" alt="Featured image for the post entitled '{{title}}'">
       {{/if}}
       <section class="content">
+        <h1>{{title}}</h1> 
         {{content}}
       </section>
 
