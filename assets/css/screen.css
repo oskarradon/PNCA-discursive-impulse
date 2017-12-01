@@ -369,7 +369,7 @@ header button {
   font-family: 'freight-text', serif;
 }
 
-@media all and (min-width:680px) {
+@media (min-width:680px) {
   .page {
     padding:40px 100px 100px;
   }
