@@ -1,7 +1,7 @@
 {
     "name": "discursive",
     "description": "A theme to be used for PNCA + CCAC's project: Discursive Impulse",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "engines": {
         "ghost": ">=1.0.0"
     },
@@ -15,6 +15,6 @@
         "url": "https://github.com/oskarradon/discursive-impulse.git"
     },
     "config": {
-    "posts_per_page": 7
+    "posts_per_page": 5
     }
 }
