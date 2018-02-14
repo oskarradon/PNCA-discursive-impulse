@@ -364,13 +364,13 @@ header button {
 /* 6. Single Post
 /* ---------------------------------------------------------- */
 
-.page {
+.page-template {
   padding: 40px 30px 40px;
   font-family: 'freight-text', serif;
 }
 
 @media (min-width:680px) {
-  .page {
+  .page-template {
     padding:40px 100px 100px;
   }
 }
@@ -385,60 +385,60 @@ header button {
   margin: 0 auto;
 }
 
-.page h1, .page h2, .page h3, .page h4, .page h5 {
+.page-template h1, .page-template h2, .page-template h3, .page-template h4, .page-template h5 {
   font-weight: bold;
   margin-bottom: 30px;
   padding-top: 10px;
 }
 
-.page p {
+.page-template p {
   font-size: 18px;
   margin-bottom: 20px;
   line-height: 1.3em;
 }
 
-.page h1 {
+.page-template h1 {
   font-size: 36px;
   line-height: 1.15em;
 }
 
-.page h2 {
+.page-template h2 {
   font-size: 28px;
   line-height: 1.2em;
 }
 
-.page h3 {
+.page-template h3 {
   font-size: 25px;
   line-height: 1.2em;
 }
 
-.page h4 {
+.page-template h4 {
   font-size: 20px;
   line-height: 1.2em;
 }
 
-.page h5 {
+.page-template h5 {
   font-size: 18px;
   line-height: 1.2em;
 }
 
-.page ul, .page ol {
+.page-template ul, .page-template ol {
   margin-bottom: 20px;
   list-style-position: inside;
 }
 
-.page li {
+.page-template li {
   font-size: 18px;
   line-height: 1.3em;
 }
 
-.page blockquote {
+.page-template blockquote {
   background: #EDEDED;
   padding: 20px;
   margin-bottom: 20px;
 }
 
-.page blockquote p {
+.page-template blockquote p {
   margin-bottom: 0px;
   font-size: 24px;
   font-style: italic;
@@ -465,7 +465,7 @@ hr {
 
 /* https://codepen.io/danferth/ came up with this */
 
-.page a {
+.page-template a {
   text-decoration: none;
   border-bottom: 1px dashed #5DABFF;
   display: inline;
@@ -476,18 +476,18 @@ hr {
   z-index: 1000;
 }
 
-.page a:hover {
+.page-template a:hover {
   border-color: transparent;
   background-size: 100% 200%;
   background-image: linear-gradient(to top, rgba(93, 171, 255, 0.16) 50%, transparent 50%);
   background-position: 0 95%;
 }
 
-.page a:hover:before {
+.page-template a:hover:before {
   height: 100%;
 }
 
-.page mark {
+.page-template mark {
   background: #B9DBFF;
   padding: 4px;
 }
