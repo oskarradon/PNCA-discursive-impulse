@@ -4,9 +4,8 @@
 
 A theme for [PNCA](http://pnca.edu/)'s [Ghost.io](http://ghost.io) site, [Discursive Impulse](http://www.discursiveimpulse.com/).
 
-Made as a part of my work-study internship at the PNCA Communications office in 2017!
+I designed + built this as a part of my work-study internship at the PNCA Communications office in 2017! Thank you to [Chris Kim](http://chrisskim.com/) for so much help with the development!
 
-# ☃
 
 ## TO DO:
  - [x] Main Nav
@@ -24,7 +23,5 @@ Made as a part of my work-study internship at the PNCA Communications office in 
  - [ ] 404 Page
  - [ ] Star icon in nav
  - [ ] Bio page
-
-Made by Oskar Radon with help from Chris Kim
 
 MIT License
