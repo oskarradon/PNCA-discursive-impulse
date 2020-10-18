@@ -6,22 +6,4 @@ A theme for [PNCA](http://pnca.edu/)'s [Ghost.io](http://ghost.io) site, [Discur
 
 I designed + built this as a part of my work-study internship at the PNCA Communications office in 2017! Thank you to [Chris Kim](http://chrisskim.com/) for so much help with the development!
 
-
-## TO DO:
- - [x] Main Nav
-   - [x] Filter by post type or static pages?
-   - [x] Animation?
- - [x] Hamburger menu on mobile
-   - [ ] Animation?
- - [ ] Load more posts button on front page
- - [x] Post page
-   - [x] Cool link outline thing
-   - [x] Blockquotes
- - [ ] Author page
- - [x] Footer with images
- - [x] Actual logo in header
- - [ ] 404 Page
- - [ ] Star icon in nav
- - [ ] Bio page
-
-MIT License
+MIT License :)
